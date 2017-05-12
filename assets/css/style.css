@@ -7,12 +7,36 @@ body {
 }
 
 h1 {
-	padding: 4% 4%;
+	padding: 6% 0 2% 0;
+	margin: 0;
 	color: white;
 	font-weight: 700;
+}
+
+h2 {
+	padding: 2% 0;
+	margin:auto;
+	color: white;
+	font-weight: 400;
 }
 
 .char-img {
 	width: 150px;
 	border: 4px groove limegreen;
+	overflow: auto;
 }
+
+/*.char {
+	position: relative;
+}
+
+.char h3 {
+	position: absolute;
+	color: white;
+	bottom: 20px;
+	width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+}*/
