@@ -20,6 +20,10 @@ h2 {
 	font-weight: 400;
 }
 
+.hidden { 
+	display: none; 
+}
+
 .char-img {
 	width: 150px;
 	border: 4px groove limegreen;

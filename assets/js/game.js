@@ -14,7 +14,10 @@ $(document).ready(function() {
 		  $('#chewy').appendTo('#first-enemy')
 		  $('#jabba').appendTo('#second-enemy')
 		  $('#greedo').appendTo('#third-enemy')
-          console.log('clicked');
+          $(function () {
+     	  	$('#chosen-text').removeClass('hidden');
+     	  	$('#enemies-text').removeClass('hidden');
+ 		  });
 		}
     });
 	$chewy.on('click', function() {
@@ -24,7 +27,10 @@ $(document).ready(function() {
 		  $('#hansolo').appendTo('#first-enemy')
 		  $('#jabba').appendTo('#second-enemy')
 		  $('#greedo').appendTo('#third-enemy')
-          console.log('clicked');
+          $(function () {
+     	  	$('#chosen-text').removeClass('hidden');
+     	  	$('#enemies-text').removeClass('hidden');
+ 		  });
         }
     });
 	$jabba.on('click', function() {
@@ -34,7 +40,10 @@ $(document).ready(function() {
 		  $('#hansolo').appendTo('#first-enemy')
 		  $('#chewy').appendTo('#second-enemy')
 		  $('#greedo').appendTo('#third-enemy')
-          console.log('clicked');
+          $(function () {
+     	  	$('#chosen-text').removeClass('hidden');
+     	  	$('#enemies-text').removeClass('hidden');
+ 		  });
         }
     });
 	$greedo.on('click', function() {
@@ -44,7 +53,10 @@ $(document).ready(function() {
 		  $('#hansolo').appendTo('#first-enemy')
 		  $('#chewy').appendTo('#second-enemy')
 		  $('#jabba').appendTo('#third-enemy')
-          console.log('clicked');
+          $(function () {
+     	  	$('#chosen-text').removeClass('hidden');
+     	  	$('#enemies-text').removeClass('hidden');
+ 		  });
         }
     });
 
