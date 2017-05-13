@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	var start = true;
+
 	// Character Selection
 	var $hansolo = $('#hansolo');
 	var $chewy = $('#chewy');
@@ -8,7 +10,7 @@ $(document).ready(function() {
 
 	// Choices
 	$hansolo.on('click', function() {
-		if($hansolo)
+		if(start)
 		{
 		  $('#hansolo').appendTo('.choice')
 		  $('#chewy').appendTo('#first-enemy')
@@ -18,10 +20,11 @@ $(document).ready(function() {
      	  	$('#chosen-text').removeClass('hidden');
      	  	$('#enemies-text').removeClass('hidden');
  		  });
+ 		start = false;
 		}
     });
 	$chewy.on('click', function() {
-		if($chewy)
+		if(start)
 		{
 		  $('#chewy').appendTo('.choice')
 		  $('#hansolo').appendTo('#first-enemy')
@@ -31,10 +34,11 @@ $(document).ready(function() {
      	  	$('#chosen-text').removeClass('hidden');
      	  	$('#enemies-text').removeClass('hidden');
  		  });
+ 		start = false;
         }
     });
 	$jabba.on('click', function() {
-		if($jabba)
+		if(start)
 		{
 		  $('#jabba').appendTo('.choice')
 		  $('#hansolo').appendTo('#first-enemy')
@@ -44,10 +48,11 @@ $(document).ready(function() {
      	  	$('#chosen-text').removeClass('hidden');
      	  	$('#enemies-text').removeClass('hidden');
  		  });
+ 		start = false;
         }
     });
 	$greedo.on('click', function() {
-		if($greedo)
+		if(start)
 		{
 		  $('#greedo').appendTo('.choice')
 		  $('#hansolo').appendTo('#first-enemy')
@@ -57,6 +62,7 @@ $(document).ready(function() {
      	  	$('#chosen-text').removeClass('hidden');
      	  	$('#enemies-text').removeClass('hidden');
  		  });
+ 		start = false;
         }
     });
 
