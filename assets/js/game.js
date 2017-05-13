@@ -17,6 +17,7 @@ $(document).ready(function() {
 		  $('#jabba').appendTo('#second-enemy')
 		  $('#greedo').appendTo('#third-enemy')
           $(function () {
+          	$("#character-text").remove('#character-text');
      	  	$('#chosen-text').removeClass('hidden');
      	  	$('#enemies-text').removeClass('hidden');
  		  });
@@ -31,6 +32,7 @@ $(document).ready(function() {
 		  $('#jabba').appendTo('#second-enemy')
 		  $('#greedo').appendTo('#third-enemy')
           $(function () {
+          	$("#character-text").remove('#character-text');
      	  	$('#chosen-text').removeClass('hidden');
      	  	$('#enemies-text').removeClass('hidden');
  		  });
@@ -45,6 +47,7 @@ $(document).ready(function() {
 		  $('#chewy').appendTo('#second-enemy')
 		  $('#greedo').appendTo('#third-enemy')
           $(function () {
+          	$("#character-text").remove('#character-text');
      	  	$('#chosen-text').removeClass('hidden');
      	  	$('#enemies-text').removeClass('hidden');
  		  });
@@ -59,6 +62,7 @@ $(document).ready(function() {
 		  $('#chewy').appendTo('#second-enemy')
 		  $('#jabba').appendTo('#third-enemy')
           $(function () {
+          	$("#character-text").remove('#character-text');
      	  	$('#chosen-text').removeClass('hidden');
      	  	$('#enemies-text').removeClass('hidden');
  		  });
