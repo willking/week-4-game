@@ -25,9 +25,21 @@ h2 {
 }
 
 .char-img {
+	position: relative;
 	width: 150px;
 	border: 4px groove limegreen;
 	overflow: auto;
+}
+
+.char-text {
+	position: absolute;
+	color: white;
+	bottom: 20px;
+	width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
 }
 
 /*.char {
