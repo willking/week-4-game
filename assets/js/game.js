@@ -1,12 +1,18 @@
 $(document).ready(function() {
 
+	//Audio
+	// var audioElement = $('audio');
+	// 	audioElement.attr('src', 'assets/mp3/cantina.mp3');
+	// 	audioElement.attr('autoplay', 'autoplay');
+	// 	audioElement.loop = true; 
+
 	//Objects
 	var hansolo = {
 		name: "Han Solo",
 		attack: 10,
 		hp: 20,
 		counter: 0,
-		src: "http://www.themovieguys.net/wp-content/uploads/2010/12/HarrisonFord-300x300.jpg",
+		src: "assets/images/hansolo.jpg",
 	}
 
 	var chewy = {
@@ -57,6 +63,28 @@ $(document).ready(function() {
 		  charOptionsRow.append(charOptionCol);
 	});
 
+	$(document).on('click', '.char-img', 'char-text', function() {
+		if (hansolo) {
+	  		var charPick =$("#chosen");
+			$('.char-img').appendTo(charPick);
+			$('.char-text').appendTo(charPick);
+		}
+		if (chewy) {
+	  		var charPick =$("#chosen");
+			$('.char-img').appendTo(charPick);
+			$('.char-text').appendTo(charPick);
+		}
+		if (jabba) {
+	  		var charPick =$("#chosen");
+			$('.char-img').appendTo(charPick);
+			$('.char-text').appendTo(charPick);
+		}
+		if (greedo) {
+	  		var charPick =$("#chosen");
+			$('.char-img').appendTo(charPick);
+			$('.char-text').appendTo(charPick);
+		}
+	});
 
 	// var start = true;
 
