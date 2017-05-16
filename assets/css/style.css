@@ -20,6 +20,10 @@ h2 {
 	font-weight: 400;
 }
 
+img {
+	width: 150px;
+}
+
 .hidden { 
 	display: none; 
 }
@@ -35,9 +39,7 @@ h2 {
 	position: absolute;
 	color: white;
 	bottom: 20px;
-	width: 100%;
-    padding: 15px;
-    margin-bottom: 0;
+	text-align: center;
     font-weight: 300;
     line-height: 30px;
 }

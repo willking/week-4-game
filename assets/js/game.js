@@ -6,7 +6,7 @@ $(document).ready(function() {
 		attack: 10,
 		hp: 20,
 		counter: 0,
-		src: "assets/images/hansolo.jpg",
+		src: "http://www.themovieguys.net/wp-content/uploads/2010/12/HarrisonFord-300x300.jpg",
 	}
 
 	var chewy = {
@@ -35,18 +35,28 @@ $(document).ready(function() {
 
 	var choices = [hansolo, chewy, jabba, greedo];
 
-	for (var i = 0; i < choices.length; i++) {
-		var charOptions = $("<charOptions>");
-        charOptions
-	        .addClass( "char-img char-text")
-	        // .image(choices[i].src)
-	        .attr("src", choices[i].src)
-	        .text(choices[i].name);        
-        $(".charOptions").append(charOptions);
-        console.log(charOptions);
-	}
+	var charOptionsRow = $('#charOptions');
+		$.each(choices, function(index, choice) {
+		  // Create a new div.col-lg-3 to be appended to row.
+		  var charOptionCol = $('<div>')
+		    .addClass('char-option col-lg-3');
 
-	
+		  // Append image to col.
+		  var charImg = $('<img>')
+		    .addClass('char-img')
+		    .attr('src', choice.src);
+		  charOptionCol.append(charImg);
+
+		  // Append text to col.
+		  var charText = $('<h3>')
+		    .addClass('char-text')
+		    .text(choice.name);
+		  charOptionCol.append(charText);
+
+		  // Append column to row.
+		  charOptionsRow.append(charOptionCol);
+	});
+
 
 	// var start = true;
 
