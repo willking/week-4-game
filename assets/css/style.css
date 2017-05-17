@@ -22,14 +22,32 @@ h2 {
 
 img {
 	width: 150px;
+	margin: 5%;
+}
+
+#attack-button {
+	margin-top: 35%;
+	padding: 10px;
+	font-size: 150%;
+	font-weight: 300;
 }
 
 .hidden { 
 	display: none; 
 }
 
+.you {
+	margin: auto;
+}
+
+.fighting {
+	margin: auto;
+}
+
 .char-img {
+	margin: auto;
 	position: relative;
+	float: left;
 	width: 150px;
 	border: 4px groove limegreen;
 	overflow: auto;
@@ -37,24 +55,13 @@ img {
 
 .char-text {
 	position: absolute;
+	margin: auto;
+	left:20%;
 	color: white;
+	background-color: darkgrey;
 	bottom: 20px;
 	text-align: center;
     font-weight: 300;
     line-height: 30px;
+    width: 50%;
 }
-
-/*.char {
-	position: relative;
-}
-
-.char h3 {
-	position: absolute;
-	color: white;
-	bottom: 20px;
-	width: 100%;
-    padding: 15px;
-    margin-bottom: 0;
-    font-weight: 300;
-    line-height: 30px;
-}*/
