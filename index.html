@@ -12,37 +12,41 @@
 
 	<body>
 
-		<audio id="gameMusic">
+		<audio controls autoplay>
 			<source src="assets/mp3/cantina.mp3" type="audio/mpeg" />
 		</audio>
 
 		<div class="container" style="max-width:800px;">
+		  
 			<h1 align="center">Star Wars Game</h1>
 			<h2 align="center" id="character-text">Choose your character:</h2>
 			<div class="row" id="charOptions" align="center">
 			</div>
-			
-			<div class="row" align="center">
-				<!-- You -->
-				<div class="col-lg-4 you" align="center">
-					<h2 align="center" id="chosen-text" class="hidden">You</h2>
+			<div class="shift">
+				<div class="row" align="center">
+					<!-- You -->
+					<div class="col-lg-3 you" align="center">
+						<h2 align="center" id="chosen-text" class="hidden">You</h2>
+					</div>
+					<!-- Attack Button -->
+					<div class="col-lg-3 button" align="center">
+						<button align="center" id="attack-button" class="hidden">Attack</button>
+						<div class="damage"></div>
+						<div class="hp"></div>
+					</div>
+					<!-- Fighting -->
+					<div class="col-lg-3 fighting" align="center">
+						<h2 align="center" id="fighting-text" class="hidden">Fighting</h2>
+					</div>
 				</div>
-				<!-- Attack Button -->
-				<div class="col-lg-4 button" align="center">
-					<button align="center" id="attack-button" class="hidden">Attack</button>
-				</div>
-				<!-- Fighting -->
-				<div class="col-lg-4 fighting" align="center">
-					<h2 align="center" id="fighting-text" class="hidden">Fighting</h2>
-				</div>
-			</div>
-			<div class="row" align="center">
-				<!-- Enemies -->
-				<div class="col-lg-12 enemies" align="center">
-					<h2 align="center" id="enemies-text" class="hidden">Your Enemies</h2>
+				<div class="row" align="center">
+					<h2 align="center" id="enemies-text" class="col-lg-9 hidden">Your Enemies</h2>
+					<!-- Enemies -->
+					<div class="col-lg-12 enemies" align="center">	
+					</div>
 				</div>
 			</div>	
-					
+		    <h1></h1>			
 		</div>
 
 	<script src="assets/js/game.js"></script>

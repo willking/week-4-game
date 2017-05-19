@@ -15,14 +15,23 @@ h1 {
 
 h2 {
 	padding: 2% 0;
-	margin:auto;
+	margin: auto;
 	color: white;
 	font-weight: 400;
+}
+
+h3 {
+	font-size: 90%;
+	padding: 0;
 }
 
 img {
 	width: 150px;
 	margin: 5%;
+}
+
+.container {
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 #attack-button {
@@ -53,7 +62,7 @@ img {
 	overflow: auto;
 }
 
-.char-text {
+.char-name {
 	position: absolute;
 	margin: auto;
 	left:20%;
@@ -64,4 +73,21 @@ img {
     font-weight: 300;
     line-height: 30px;
     width: 50%;
+}
+
+.char-hp {
+	position: absolute;
+	margin: auto;
+	left:20%;
+	color: white;
+	background-color: darkgrey;
+	bottom: 0px;
+	text-align: center;
+    font-weight: 300;
+    line-height: 30px;
+    width: 50%;
+}
+
+.shift {
+	margin-left: 20%;
 }
